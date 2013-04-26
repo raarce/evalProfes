@@ -1,5 +1,5 @@
 To run:
 
 ```
-python eval.py eval.txt:wq
+python eval.py eval.txt
 ```
