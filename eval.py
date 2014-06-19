@@ -65,6 +65,7 @@ content = fPtr.read()
 # erase anything that is not an accepted character 
 content = re.sub("(?![A-z\s\-\*\|0-9]).{1}","",content)
 content = re.sub('(' + '|'.join(chars.keys()) + ')', replace_chars, content)
+content = re.sub("\r"," ",content)
 
 sp = re.split(' ', content) #, flags=re.IGNORECASE)
 sp = filter (lambda a: a.replace(" ","")!='' , sp)
